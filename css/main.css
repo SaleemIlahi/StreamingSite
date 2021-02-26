@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --header-font: 'Exo 2', sans-serif;
+    --body-font: 'Poppins', sans-serif;
+    --font-size-Xxlarge: 3.5rem;
+    --font-size-xlarge: 3rem;
+    --font-size-large: 2.5rem;
+    --font-size-medium: 2rem;
+    --font-size-small: 1.5rem;
+    --font-size-xsmall: 1rem;
+    --font-size-Xxsmall: .8rem;
+    --primary-color: #E7A12F;
+    --secondary-color: #0f1123;
+    --black-color: #000;
+}
