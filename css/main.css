@@ -1,3 +1,4 @@
+@import "header.css";
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 *{
@@ -20,3 +21,13 @@
     --secondary-color: #0f1123;
     --black-color: #000;
 }
+
+body{
+    background: var(--black-color);
+}
+
+a:hover{
+    color: var(--black-color);
+}
+
+

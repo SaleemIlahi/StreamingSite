@@ -21,7 +21,52 @@
     </head>
     <body>
 
+        <header class="header container">
+            <div class="navbar">
+                <div class="navbar-brand">
+                    <img src="img/logo/logo.png" alt="logo" class="logo" />
+                </div>
+
+                <div class="navbar-nav-list">
+                    <ul class="navbar-nav d-flex flex-lg-row">
+                        <li class="nav-item active">
+                            <a href="#movies" class="nav-link">Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#shows" class="nav-link">TV Shows</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#watchlist" class="nav-link">Watchlist</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#login" class="nav-link">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="search-box d-flex flex-row align-items-center">
+                                <input type="text" placeholder="Search Movies & TV shows" class="form-control" id="search" />
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-humbuger" id="humbuger">
+                    <span class="bars upper-bar"></span>
+                    <span class="bars middle-bar"></span>
+                    <span class="bars lower-bar"></span>
+                </div>
+            </div>
+        </header>
+
         <!-- Javascript File -->
         <script src="js/main.js"></script>
+        <script type="text/javascript">
+            const humbuger = document.querySelector("#humbuger");
+            const navbar = document.querySelector(".navbar-nav-list");
+            humbuger.addEventListener('click', () => {
+                humbuger.classList.toggle("toggler");
+                navbar.classList.toggle("navbar-toggler");
+            });
+        </script>
     </body>
 </html>
