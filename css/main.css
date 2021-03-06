@@ -30,7 +30,16 @@ a:hover{
     color: var(--black-color);
     text-decoration: none;
 }
-
+.content-container{
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+.content-header{
+    text-align: center;
+    font-family: var(--header-font);
+    color: var(--primary-color);
+    margin: 40px 0;
+}
 
 /* Carousel Section */
 .carousel.container{
@@ -116,4 +125,137 @@ a:hover{
 }
 .carousel-control-nexts{
     right: 5%;
+}
+
+/* Card Section */
+.card{
+    width: 226px;
+    background: none;
+    overflow: hidden;
+    margin-right: 4px;
+}
+.card img{
+    width: 100%;
+}
+.card-img-overlay{   
+    width: 100%;
+    height: 150px;
+    top: 100%;
+    border-radius: 10px;
+    text-align: center;
+    background: var(--secondary-color);
+    transition: all .3s ease-in 0s;
+}
+.card:hover .card-img-overlay{
+    top: 56%;
+}
+.card-overlay-box{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--primary-color);
+}
+.card-link{
+    font-size: var(--font-size-xsmall);
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 8px;
+}
+.card-link:hover{
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+    
+/* Trending Section */
+.trending-table{
+    margin: 60px 0;
+}
+.trending-container{
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+}
+.trending-cont-box{
+    width: 100%;
+    height: 550px;
+}
+.trending-box{
+    width: 100%;
+    position: relative;
+}
+.img-overlay{
+    position: relative;
+    width: 100%;
+    background: radial-gradient(rgba(255,255,255,.9) , rgba(0,0,0,.7)) !important;
+}
+.img-overlay img{
+    width: 100%;
+    height: 550px;
+    mix-blend-mode: multiply;
+}
+.trending-body{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.trending-body h1{
+    color: var(--primary-color);
+    font-family: var(--header-font);
+    font-size: var(--font-size-Xxlarge);
+}
+.trending-body p{
+    width: 70%;
+    font-size: 1.3rem;
+}
+.next-trending{
+    width: 180px;
+    height: 100%;
+    position: relative;
+}
+.next-trending-box{
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease 0s;
+}
+.next-trending-box .trend-img{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    margin-bottom: 4px;
+}
+.next-trending-box .trend-img.active{
+    border: 12px groove var(--primary-color);
+    padding: 5px;
+}
+.trend-control{
+    color: var(--primary-color);
+}
+.trend-prev-control,
+.trend-next-control{
+    padding: 8px 12px;
+    position: absolute;
+    left: 40%;
+    cursor: pointer;
+    background: var(--secondary-color);
+}
+.trend-prev-control{
+    top: 0%;
+    transform: rotateZ(90deg);
+}
+.trend-next-control{
+    bottom: 0%;
+    transform: rotateZ(-90deg);
+}
+
+.footer{
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 5px 0;
+    font-size: var(--font-size-Xxsmall);
 }

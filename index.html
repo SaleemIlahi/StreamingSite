@@ -61,7 +61,7 @@
         <!-- Carousel Section -->
         <section class="carousel container p-0">
             <div class="carousel-list">
-                <div class="carousel-items active" data-id="475557">
+                <div class="carousel-items active" id="475557">
                     <img src="https://image.tmdb.org/t/p/original/f5F4cRhQdUbyVbB5lTNCwUzD6BP.jpg" alt="carousel" />
                     <div class="carousel-caption">
                         <h1 class="carousel-title">Joker</h1>
@@ -79,7 +79,7 @@
                         <a href="#" class="carousel-link">Watch Now</a>
                     </div>
                 </div>
-                <div class="carousel-items" data-id="27205">
+                <div class="carousel-items" id="27205">
                     <img src="https://image.tmdb.org/t/p/original/s3TBrRGB1iav7gFOCNx3H31MoES.jpg" alt="carousel" />
                     <div class="carousel-caption">
                         <h1 class="carousel-title">Inception</h1>
@@ -97,7 +97,7 @@
                         <a href="#" class="carousel-link">Watch Now</a>
                     </div>
                 </div>  
-                <div class="carousel-items" data-id="468552">
+                <div class="carousel-items" id="468552">
                     <img src="https://image.tmdb.org/t/p/original/srYya1ZlI97Au4jUYAktDe3avyA.jpg" alt="carousel" />
                     <div class="carousel-caption">
                         <h1 class="carousel-title">Wonder Woman 1984</h1>
@@ -115,7 +115,7 @@
                         <a href="#" class="carousel-link">Watch Now</a>
                     </div>
                 </div>   
-                <div class="carousel-items" data-id="353081">
+                <div class="carousel-items" id="353081">
                     <img src="https://image.tmdb.org/t/p/original/aw4FOsWr2FY373nKSxbpNi3fz4F.jpg" alt="carousel" />
                     <div class="carousel-caption">
                         <h1 class="carousel-title">Mission: Impossible - Fallout</h1>
@@ -133,7 +133,7 @@
                         <a href="#" class="carousel-link">Watch Now</a>
                     </div>
                 </div>  
-                <div class="carousel-items" data-id="533991">
+                <div class="carousel-items" id="533991">
                     <img src="https://image.tmdb.org/t/p/original/eJPky5hssaNpjVRS5XMB3gkgJrQ.jpg" alt="carousel" />
                     <div class="carousel-caption">
                         <h1 class="carousel-title">Stree</h1>
@@ -162,7 +162,39 @@
             </div>
         </section>
 
+        <section class="content-container container p-0" data-type="popular-movies">
+            <h1 class="content-header">Popular Movies</h1>
+            <div class="movie-card d-flex flex-row"></div>
+        </section>
 
+        <section class="content-container container p-0" data-type="popular-shows">
+            <h1 class="content-header">Popular TV Shows</h1>
+            <div class="TVshow-card d-flex flex-row"></div>
+        </section>
+
+        <section class="trending container p-0">
+            <div class="trending-table">
+                <h1 class="content-header">Trending Movies/TV Shows</h1>
+                <div class="trending-container d-flex flex-row">
+                    <div class="trending-cont-box"></div>
+                    <div class="next-trending">
+                        <div class="trend-control">
+                            <div class="trend-prev-control">
+                                <i class="fas fa-less-than"></i>
+                            </div>
+                            <div class="trend-next-control">
+                                <i class="fas fa-less-than"></i>
+                            </div>
+                        </div>
+                        <div class="next-trending-box"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer text-center">
+            Designed By Mohamed Saleem. &copy;Copywrite 2021
+        </footer>
 
         <!-- Javascript File -->
         <script src="js/main.js"></script>
